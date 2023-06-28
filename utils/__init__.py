@@ -12,3 +12,9 @@ def format_table(df):
         .style
         .format(thousands = " ", precision = 0)
     )
+
+def format_percent(style):
+    return (
+        style
+        .format('{:,.1%}'.format)
+    )
